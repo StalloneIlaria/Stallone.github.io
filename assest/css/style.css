@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background-color:rgb(238, 238, 238);
+     font-family: sans-serif;
+    }
+
+
+/*------------------------NAVIGATION SECTION START HERE-----------------*/
+
+nav{width: 100%; height: 70px; background-color: #c8a2c8; line-height: 60px; padding: 0px 20px;}
+
+nav .logo{float: left; color: rgb(255, 255, 255); font-size: 27px; text-transform: capitalize; letter-spacing: 2.5px;}
+
+nav ul{float: right;}
+
+nav ul li{list-style: none; display: inline-block;}
+
+nav ul li a{text-decoration: none; text-transform: capitalize; padding: 0px 10px; font-size: 20px; letter-spacing: 1px; color: rgb(255, 255, 255); cursor: pointer;}
+
+nav ul li a:hover{color: rgb(153, 85, 187);}
+
+#check{display: none;}
+
+.checkbtn{color: rgb(255, 255, 255); cursor: pointer; font-size: 25px; float: right; display: none;}
+
+/*----------------------NAVIGATION SECTION END HERE-------------------*/
+
+/*------------------------ABOUT ME SECTION HERE-----------------------*/
+
+.aboutme{ display: flex; flex-direction:column; background-color: rgb(238, 238, 238); width: 100%; height: 100vh; align-items: center; justify-content: center; padding-top: 0; margin-top: 0;}
+
+#hi{padding-top: 15px; color: rgb(255, 255, 255); font-family: "Quintessential", cursive; font-size: 35px;}
+
+p{color: #9955BB; font-size: 20px; padding-left: 10px; padding-right: 10px; text-align: center;}
+
+#special{ text-align: center; color: #C8A2C8; font-family: 'quintessential'; font-size: 20px; text-decoration: none;}
+
+/*-------------------------ABOUT ME SECTION END HERE---------------------*/
+
+/*---------------------------MY PORFOLIO SECTION START HERE----------------*/
+
+.portfolio{ width: 100%; height: 80vh; display: flex; flex-direction: column; justify-content:center; align-items: center; background-color:#C8A2C8}
+
+h1{color: rgb(153, 85, 187); font-size: 35px; font-family: cursive; text-transform: uppercase;}
+
+.paragraph{ font-size: 20px; padding-top: 10px; color:rgb(238, 238, 238);}
+
+#portfolio{ color: rgb(153, 85, 187);}
+
+/*----------------------------MY PORTFOLIO SECTION END HERE----------------------*/
+
+/*--------------------------SKILLS PAGE SECTION HERE---------------------------*/
+
+.myskills{ width: 100%; height: 100vh;}
+
+#myskills { position: relative; display: flex; justify-content:center; padding-top: 20px; font-size: 40px; text-transform: uppercase; color: rgb(200, 162, 200);}
+
+.container{width: 40%; height: 60%; background-color: rgb(200, 162, 200); float: left; display: flex; flex-direction: column; justify-items: center; align-items: center; border-radius: 50px; margin: 30px; margin-left: 30px; box-shadow: 0 5px 10px rgb(75, 55, 92);}
+
+.container:hover{background-color: rgb(153, 85, 187);}
+
+#html, #css{color: rgb(255, 255, 255);font-weight: bold; text-align: center; font-size: 25px; padding: 10px;}
+
+#iconhtml5, #iconcss{width: 90px; padding-top: 10px; padding-bottom: 20px; justify-content: center; align-content: center;}
+
+.title{ color: rgb(255, 255, 255); font-weight: bold; text-align: center; padding-top: 30px; font-size: 25px;}
+
+#soft-skills{ padding: 10px; font-size: 20px; font-family: "quintessential", cursive; color:rgb(255, 255, 255);}
+
+#soft-skills li{ list-style: none; list-style-type: "\2714"; check marks; padding-left: 5px;}
+  
+/*-------------------------------SKILLS SECTION END HERE----------------------------*/
+
+/*--------------------------------CONTACT SECTION START HERE-----------------------*/
+
+.container1{height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: rgb(200, 162, 200); font-size: 20px;}
+
+#textme{ position: relative; display: flex; flex-direction: column; justify-content: center; padding-top: 20px; font-size: 40px; text-transform: uppercase; color: rgb(255, 255, 255);}
+
+.container2{max-width: 1050px; background-color:  rgb(238, 238, 238); border-radius: 15px; margin: 10px 20px; box-shadow: 0 5px 10px rgb(67, 54, 78);width: 100%;}
+
+.container1 .contact{ padding: 25px 30px; display: flex; align-items: center; justify-content: space-between;}
+
+.contact .img-box{ max-width: 55%; background-color: rgb(200, 162, 200); border-radius: 20px;}
+
+.contact .img-box img{width: 100%;}
+
+.contact form{ width: 40%; margin-right: 30px;}
+
+.contact .input-box{height: 50px; width: 100%; position: relative; margin: 15px 0;}
+
+.contact .input-box input{position: absolute; font-size: 18px; padding-left: 6px; width: 100%; height: 100%; border-radius: 5px; outline: none; border: 2px solid transparent; background-color: rgb(207, 203, 203); transition: all 0.3s ease;}  
+
+.contact .input-box label{ position: absolute; top: 50%; transform: translateY(-50%); left: 10px; font-size: 18px; color: rgb(67, 54, 78);}
+
+.contact .input-box input:focus,
+.contact .input-box input:valid{ background-color: rgb(207, 203, 203); color:rgb(255, 255, 255);}
+
+.contact .input-box input:focus~label,
+.contact .input-box input:valid~label{ top:0; left: 10px; border-color: rgb(207, 203, 203); color: rgb(75, 55, 92);}
+
+.contact .message-box{ position: relative; min-height: 100px;}
+
+.contact .message-box textarea{ position: absolute; height: 100%; width: 100%; outline: none; resize: none; border-radius: 5px; border: 2px solid transparent; background-color:rgb(207, 203, 203); padding-left: 6px;font-size: 18px;}
+
+.content .message-box textarea:focus,
+.contact .message-box textarea:valid{ background-color: rgb(207, 203, 203); color: rgb(255, 255, 255);}
+
+.contact .message-box label{ position: absolute; top: 50%; transform: translateY(-50%); left: 10px; font-size: 18px; color: rgb(75, 55, 92);}
+
+.contact .message-box textarea:focus~label{ left: 12px; top: 0; border-color: rgb(207, 203, 203); color: rgb(75, 55, 92)}
+
+.contact .input-box input[type="submit"]{ color: rgb(255, 255, 255); font-size: 18px; font-weight:bolder; background-color: rgb(200, 162, 200); cursor: pointer;}
+
+.contact .input-box input[type="submit"]:hover{ background-color:rgb(153, 85, 187); color:rgb(238, 238, 238);}
+
+/*-----------------------------CONTACT ME SECTION END HERE----------------------------*/
+
+/*-----------------------------------FOOTER SECTION START HERE-------------------------------*/
+.footer{ width: 100%;  bottom: 0; display: flex; align-items: center; justify-content: center; padding: 18px;}
+
+.social-icons{ margin: 5px;}
+
+.social-icons i {color:rgb(153, 85, 187); font-size: 20px; padding: 5px;}
+
+.social-icons i:hover{ background-color: rgb(200, 162, 200); color: rgb(67, 54, 78); border-radius: 5px;}
+
+.copyrights { font-size: 18px; color: rgb(153, 85, 187); }
+/*-----------------------------------FOOTER SECTION END HERE-------------------------------*/
+
+
+
+
+
+
+
+
+/*-----------------------------MEDIA QUERIES--------------------------------*/
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    /*---------------NAVIGATION SECTION START --------------*/
+    nav{
+        padding: 0px 50px;
+        position: fixed;
+        z-index: 3;
+    }
+    
+    nav .logo{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .checkbtn{
+        display: block;
+    }
+    
+    nav ul {
+        background-color: rgba(67, 54, 78, 0.523);
+        width: 50%;
+        height: 100%;
+        position: fixed;
+        top: 70px;
+        right:-100%;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 70px 0;
+        line-height: 20px
+    }
+    
+    #check:checked ~ ul {
+        right: 0;
+    }
+    /*-----------------------NAVIGATION SECTION END--------------------------*/
+
+    /*-----------------------ABOUT ME SECTION START -----------------------*/
+
+    .aboutme{
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding-top: 80px;
+    }
+    
+    .aboutme img{
+        width: 200px;
+    }
+    
+    #hi{
+        font-size: 25px;
+    }
+    
+    p{
+        margin-left: 10px; 
+        margin-right: 10px; 
+        text-align:center;
+        font-size: 15px;
+    }  
+    
+    #special{
+        font-size: 18px;
+    }
+    
+    /*-------------ABOUT ME SECTION END------------------*/
+    
+    /*------------MY PORTFOLIO SECTION START--------------*/
+    
+    .portfolio{
+
+        padding-left: 10px; 
+        padding-right: 10px;
+    }
+    
+    .paragraph{
+        font-size: 18px;  
+    }
+    /*------------MY PORTFOLIO SECTION END--------------*/
+   
+    /*----------------CONTACT ME SECTION START-----------*/
+    
+    .textme{
+        font-size: 25px;
+    }
+
+    .container2{
+        margin: 10px 20px;
+        width: 90%;
+    }
+    
+    .contact .img-box{
+        max-width: 45%;
+        border-radius: 10px;
+    }
+    
+    .contact .img-box img{
+        width: 100%;
+    }
+    
+    /*--------------------CONTACT SECTION END-----------------------*/
+    
+    /*--------------------FOOTER SECTION START------------------*/
+    .footer{
+        padding: 10px;
+    }
+    
+    .social-icons i { 
+        font-size: 15px;
+    }
+    
+    .copyrights {
+        font-size: 15px;
+    }
+}
+/*-------------------------FOOTER SECTION END---------------------*/
+
+
+
+
+@media screen and (max-width: 600px){
+    /*-----------------NAVIGATION SECTION START----------------*/
+    nav{
+        padding: 0px 35px;
+        position: fixed;
+        z-index: 3;   
+    }
+    
+    nav .logo{
+        font-size: 18px;
+        letter-spacing: 1.4px;
+    }
+    
+    .checkbtn{
+        display: block;
+    }
+    
+    nav ul {
+        width: 40%;
+        height: 100%;
+        background-color: rgba(67, 54, 78, 0.523);
+        position: fixed;
+        top: 70px;
+        right:-100%;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+    nav ul li {
+        display: block;
+        margin: 60px 0;
+        line-height: 20px;
+        font-size: 25px;
+    }
+    
+    #check:checked ~ ul {
+        right: 0;
+    }
+    
+    /*-------------NAVIGATION SECTION END----------------*/
+
+    /*-------------ABOUT ME SECTION START---------------*/
+
+    .aboutme{
+        display: flex;
+        flex-direction:column;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .aboutme{
+        padding-top: 0;
+    }
+    
+    .aboutme img{
+        width: 200px;
+        padding-top: 70px;
+    }
+    
+    #hi{
+        font-size: 18px;
+    }
+    
+    p{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align:center;
+        font-size: 15px;
+    }  
+   
+    #special{
+        font-size: 18px;
+    } 
+    
+    /*--------------ABOUT ME SECTION END----------------*/
+
+    /*-----------MY PORTFOLIO SECTION START-------------*/
+
+    h1{
+        font-size: 28px;    
+    }
+    
+    .paragraph{   
+        font-size: 18px;
+        text-align: center; 
+    }
+
+    /*------------MY PORTFOLIO SECTION END---------------*/
+
+    /*-----------------SKILLS SECTION START----------------*/
+
+    .myskills{
+        width: 100%;
+        height: 1000%;
+       
+        display: grid;
+    }
+
+    #myskills{
+        padding-top: 10px;
+        font-size: 28px;
+    }
+    
+    .container{
+     width: 90%;
+     height: 90%;
+     border-radius: 20px;
+     margin: 10px;
+     left:auto;
+    }
+
+    #html, #css{
+        font-weight:lighter;
+        text-align: center;
+        font-size: 18px;
+        padding: 3px;
+    }
+
+    #iconhtml5, #iconcss{
+        width: 60px;
+        padding-top: 0;
+        padding-bottom: 10px;
+        justify-content: center;
+        align-content: center;   
+        
+    }
+
+    .title{
+        font-weight: lighter;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    #soft-skills{
+        padding: 5px;
+        font-size: 18px;
+    }
+    
+    #soft-skills li{
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    /*--------------------SKILLS SECTION END-----------------------*/
+
+   /*--------------------CONTACT SECTION START---------------------*/
+   
+   .textme{
+       margin: 0; 
+       font-size: 25px;
+    }
+   
+   .container2{ 
+       width: 90%; 
+       border-radius: 15px; 
+       margin: 20px 20px; 
+    }
+   
+   .contact .img-box{ 
+       display: none; 
+       max-width: 70%;
+    }
+   
+   .contact form{
+       width: 100%; 
+       margin-left: 30px;
+    }
+  /*------------CONTACT SECTION END-----------------*/
+
+  /*------------FOOTER SECTION START---------------*/
+  .footer{
+    padding: 10px;
+}
+
+  .social-icons i { 
+    font-size: 15px;
+}
+
+  .copyrights {
+    font-size: 15px;
+}
+
+}
+
+/*-----------------------FOOTER SECTION END-------------*/
